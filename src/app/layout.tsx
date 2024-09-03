@@ -21,6 +21,7 @@ export default function RootLayout({
         <ul>
           <li><Link href="/">Home</Link></li>
           <li><Link href="/blog">Blog</Link></li>
+          <li><Link href="/todo">Todo</Link></li>
         </ul>
         {children}
       </body>

@@ -1,6 +1,6 @@
 "use client"
 
-import Details from "@/component/Details";
+import Details from "@/components/Details";
 import { useState } from "react";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Welcome Home Nidhi</h1>
+      <h1>Welcome Gone Nidhi</h1>
       Price: {price * count}
       <button onClick={handleIncreses}>+</button>
       <input type="text" readOnly value={count} />
