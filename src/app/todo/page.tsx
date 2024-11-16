@@ -40,7 +40,7 @@ const Todo = () => {
 
         if(input && input.length > 4) {
 
-            if(isEdit &&selectedRow && selectedRow != null) {
+            if(isEdit && selectedRow && selectedRow != null) {
                 let list = [...todoList];
                 list = list.map((item) => {
                     if(item.id === selectedRow.id) {
@@ -52,7 +52,7 @@ const Todo = () => {
                 setInput('');
                 setIsEdit(false);
             } else {
-                let list = [...todoList];
+                let list = [...todoList]; 
                 list.push({id: todoList.length + 1, task: input, status: 'Pending'});
                 setTodoList(list);
                 setInput('');
